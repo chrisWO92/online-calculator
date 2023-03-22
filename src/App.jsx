@@ -5,9 +5,9 @@ import Buttons from './components/buttons/Buttons';
 
 function App() {
 
-  const [data, setData] = useState(0);
-  const [result, setResult] = useState(0);
-  const [prevClick, setPrevClick] = useState(0);
+  const [data, setData] = useState('0');
+  const [result, setResult] = useState('0');
+  const [prevClick, setPrevClick] = useState('0');
 
   return (
     <div id="calculator">
