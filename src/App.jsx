@@ -7,7 +7,6 @@ function App() {
 
   const [data, setData] = useState('0');
   const [result, setResult] = useState('0');
-  const [prevClick, setPrevClick] = useState('0');
 
   return (
     <div id="calculator">
@@ -20,10 +19,8 @@ function App() {
       <Buttons
         data={data}
         result={result}
-        prevClick={prevClick}
         setData={setData}
         setResult={setResult}
-        setPrevClick={setPrevClick}
       />
     </div>
   );

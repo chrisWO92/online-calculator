@@ -1,7 +1,7 @@
 import React from "react";
 import './buttons.css'
 
-const Buttons = ({data, result, prevClick, setData, setResult, setPrevClick}) => {
+const Buttons = ({data, result, setData, setResult}) => {
 
   const clickHandler = (value) => {
     if (data === "0") {
@@ -37,13 +37,12 @@ const Buttons = ({data, result, prevClick, setData, setResult, setPrevClick}) =>
   };
 
   const getResult = (value) => {
-    setPrevClick(value);
     let filtered = result.match(/(\*|\+|\/|-)?(\.|\-)?\d+/g).join('');
     let output = eval(filtered);
     if (data === 0){
         setData('0');
     }
-    setResult(result + prevClick + output);
+    setResult(result + '=' + output);
     setData(output.toString());
   }
 
@@ -97,7 +96,7 @@ const Buttons = ({data, result, prevClick, setData, setResult, setPrevClick}) =>
       <button id="decimal" onClick={() => clickHandler(".")}>
         .
       </button>
-      <button id="equals" onClick={() => getResult("=")}>
+      <button id="equals" onClick={getResult}>
         =
       </button>
     </div>
