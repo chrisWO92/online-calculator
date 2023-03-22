@@ -1,8 +1,8 @@
 /*========== GENERAL DESKTOP ===========*/
 
 #calculator {
-  height: 55vh;
-  width: 22vw;
+  height: 60%;
+  width: 27%;
   background-color: #000000;
   border: 2px solid #47476B;
   padding: 0.4vw;
@@ -33,7 +33,10 @@
 /*========== BIG TABLETS ===========*/
 @media screen and (max-width: 1400px) and (orientation: portrait) {
 
-  
+  #calculator {
+    height: 60%;
+    width: 65%;
+  }  
 
 }
 
@@ -47,6 +50,9 @@
 /*========== SMARTPHONES ===========*/
 @media screen and (max-width: 420px) and (orientation: portrait) {
 
-  
+  #calculator {
+    height: 63%;
+    width: 90%;
+  }
 
 }
