@@ -1,0 +1,65 @@
+/*========== GENERAL DESKTOP ===========*/
+
+.grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    font-family: Share Tech Mono, monospace;
+}
+
+#clear { 
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #AC3939;
+    margin: 0;
+    padding: 0;
+}
+  
+#zero { 
+    grid-area: 5 / 1 / 6 / 3;
+    margin: 0;
+    padding: 0;
+}
+  
+#equals { 
+    grid-area: 4 / 4 / 6 / 5;
+    background-color: #004466;
+    margin: 0;
+    padding: 0;
+}
+  
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+  
+button:hover {
+    color: black;
+    outline: 1px solid gray;
+}
+  
+#divide,
+#multiply,
+#add,
+#subtract {
+    background-color: #666666;
+}
+  
+#zero,
+#decimal,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+    background-color: #4D4D4D
+}

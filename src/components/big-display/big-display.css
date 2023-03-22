@@ -1,0 +1,20 @@
+/*========== GENERAL DESKTOP ===========*/
+
+#bigDisplay {
+    margin: 2px;
+    height: 66px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+  
+.formulaScreen {
+    color: #BD8100;
+    text-align: right;
+    font-size: 18px;
+}
+  
+.outputScreen {
+    color: white;
+    text-align: right;
+    font-size: 25px;
+}

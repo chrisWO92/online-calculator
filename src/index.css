@@ -19,3 +19,14 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #C2C2D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
